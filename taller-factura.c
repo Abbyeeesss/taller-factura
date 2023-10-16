@@ -45,7 +45,7 @@ int validarCedula(int num_cedula) {
 int main(void) {
   int num1=0,num2=0,num3=0,num4=0,num5=0, op;
   char direccion[15], sn[6], fecha[12], nom[20];
-  char telefono[10];
+  char telefono[12];
   int llantas=150;
   int pastillas=55;
   int embrage=180;
@@ -66,7 +66,7 @@ int main(void) {
       printf("Ingrese su número de cédula: ");
       scanf("%d", &num_cedula);
       cedula_valida = validarCedula(num_cedula);
-
+      cd=num_cedula;
       if (cedula_valida == 1) {
         break;
       }
